@@ -1,19 +1,6 @@
-sandbox=${HOME}/tmp/vbox_manjaro
-rm    -rf ${sandbox}
-mkdir -p  ${sandbox}
-cd        ${sandbox}
-
-
-#src=https://raw.githubusercontent.com/bryanhann/manjaro.vbox/master/home/setup
-##dst=${HOME}/tmp/setup.d
-
-wget      ${src}
-#chmod +x ./setup
-#./setup
-
 
 src=https://github.com/bryanhann/manjaro.vbox
-dst=${PWD}/manjaro.vbox
+dst=/tmp/manjaro.vbox.$RANDOM
 
 echo '-->' setup src: ${src}
 echo '-->' setup dst: ${dst}
@@ -28,4 +15,4 @@ echo '-->' $ git pull
 echo '-->' $ ./main.sh
              ./main.sh
 
-
+bash
