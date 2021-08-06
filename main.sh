@@ -1,6 +1,7 @@
+name=manjaro.vbox
 
-src=https://github.com/bryanhann/manjaro.vbox
-dst=$(realpath $(dirname $0))/bch.1.$RANDOM
+src=https://github.com/bryanhann/${name}
+dst=$(realpath $(dirname $0))/${name}
 
 git clone ${src} ${dst}
 
