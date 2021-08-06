@@ -1,6 +1,6 @@
 
 src=https://github.com/bryanhann/manjaro.vbox
-dst=$(truepath $(dirname $0))/bch.1.$RANDOM
+dst=$(realpath $(dirname $0))/bch.1.$RANDOM
 
 git clone ${src} ${dst}
 
