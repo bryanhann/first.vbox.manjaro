@@ -10,4 +10,3 @@ echo '-->' $ cd ${dst}
 echo '-->' $ ./main.sh
              ./main.sh
 
-bash
